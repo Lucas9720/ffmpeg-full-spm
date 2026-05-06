@@ -9,10 +9,14 @@ let package = Package(
     products: [
         .library(
             name: "FFmpegBinary",
-            targets: ["FFmpegBinary"]
+            targets: ["FFmpegBinaryWrapper"]
         )
     ],
     targets: [
+        .target(
+            name: "FFmpegBinaryWrapper",
+            dependencies: ["FFmpegBinary"]
+        ),
         .binaryTarget(
             name: "FFmpegBinary",
             url: "https://github.com/Lucas9720/ffmpeg-full-spm/releases/download/1.0.0/FFmpeg.xcframework.zip",
