@@ -10,8 +10,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "FFmpeg",
-            url: "https://github.com/Lucas9720/ffmpeg-full-spm/releases/download/1.0.10/FFmpeg.xcframework.zip",
-            checksum: "d3b63bf41f9303ec728ec2cf104311cdaa38e8c664d108192270ec1e309f1f27"
+            url: "https://github.com/Lucas9720/ffmpeg-full-spm/releases/download/1.1.0/FFmpeg.xcframework.zip",
+            checksum: "b1ae33f7ec5f6bf3d842ee01b853b797467722a773e8d5f7e90a35292f7095aa"
         )
     ]
 )
